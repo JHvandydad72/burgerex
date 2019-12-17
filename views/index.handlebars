@@ -25,7 +25,7 @@
       <hr class="my-4">
       {{#each burgers}}
         {{#unless devoured}}
-          {{> burgers/burger-block devoured=true}}
+          {{> burger-block devoured=true}}
         {{/unless}}
       {{/each}}
       <br>
@@ -37,19 +37,13 @@
       <hr class="my-4">
       {{#each burgers}}
         {{#if devoured}}
-          {{> burgers/burger-block devoured=false}}
+          {{> burger-block devoured=false}}
         {{/if}}
       {{/each}}
       <br>
       <br>
       <p>
-	{{burger_name}}
-
-	<button class="change-devoured btn btn-danger btn-sm" data-id="{{id}}" data-newdevoured="{{devoured}}">
-		{{#if devoured}}DEVOUR{{else}}NOT DEVOURED{{/if}}
-	</button>
-
-</p>
+	
 
     </div>
     
